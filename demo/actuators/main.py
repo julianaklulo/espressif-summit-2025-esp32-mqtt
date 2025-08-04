@@ -13,9 +13,9 @@ servo = Servo(SERVO_PIN)
 def control_servo(direction):
     # Set angle according to direction of the joystick
     if direction == "Left":
-        angle = 180
-    if direction == "Right":
         angle = 0
+    if direction == "Right":
+        angle = 180
     if direction == "Center":
         angle = 90
     servo.set_angle(angle)
@@ -36,7 +36,7 @@ def control_leds(distance):
     distance = max(dist_min, min(dist_max, float(distance)))
 
     # Map distance to number of LEDs to turn on
-    turn_on = int(((dist_max - distance) * (LED_N + 1)) / (dist_max - dist_min))
+    turn_on = int(((dist_max - distance) * LED_N) / (dist_max - dist_min))
 
     # Calculate color
     ratio = turn_on / LED_N
