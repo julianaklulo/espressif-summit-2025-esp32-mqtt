@@ -11,6 +11,7 @@ e utiliza um anel de LED e um servo motor para responder às informações receb
 
 A demonstração acompanha uma dashboard em React que exibe os dados em tempo real através de um websocket.
 
+https://github.com/user-attachments/assets/fef05569-7c9f-47cc-842b-307196f294f6
 
 ## Requisitos
 Para executar o exemplo, é necessário ter instalado o MicroPython nas ESP32 e configurar o broker MQTT e ativar o listener de websockets (caso queira visualizar a dashboard).
